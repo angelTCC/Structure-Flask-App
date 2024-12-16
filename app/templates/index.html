@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="banner" id="banner">
+    <div class="container">
+        <h1>Scroll Project</h1>
+        <p>description</p>
+        <a href="#scrollspyHeading1" class="scroll-link btn btn-white">Explore Tours</a>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="10" class="scrollspy-example" tabindex="0">
+        <section id="scrollspyHeading1">
+            <h1>First heading</h1>
+            {% include 'section1.html' %}
+        </section>
+        <section id="scrollspyHeading2">
+            <h1>Second Heading</h1>
+            {% include 'section2.html' %}
+        </section>
+    </div>
+</div>
+
+
+<!-- Scroll to top button -->
+<button class="scroll-to-top" id="scrollToTop">↑</button>
+{% endblock %}

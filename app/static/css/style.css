@@ -1,0 +1,41 @@
+/* Add top padding to prevent content from being hidden behind the fixed navbar */
+body {
+    padding-top: 4rem; /* Adjust to match the navbar height */
+}
+
+.scrollspy-example {
+    position: relative;
+}
+
+/* Styles for each section */
+section {
+    height: 100vh; /* Full viewport height */
+    color: #212529; /* Text color */
+}
+
+.banner {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+/* Styles for scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Initially hidden */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1.5rem;
+}
+.scroll-to-top:hover {
+    background-color:#686b6e;
+}
